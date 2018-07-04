@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Symfony Help Me Pls",
   "version": "1.0",
-  "description": "Quick link to find solution to your symfony problem",
+  "description": "Quick links to find a solution to your symfony problems",
   "author": "Julien turby",
   "browser_action": {
    "default_popup": "index.html"
