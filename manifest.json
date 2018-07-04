@@ -1,8 +1,18 @@
 {
+  "manifest_version": 2,
   "name": "Symfony Help Me Pls",
   "version": "1.0",
   "description": "Quick link to find solution to your symfony problem",
-  "manifest_version": 2,
   "author": "Julien turby",
+  "browser_action": {
+   "default_popup": "index.html"
+  },
+  "content_scripts": [
+     {
+         "matches": ["http://*/*", "https://*/*"],
+         "js": ["main.js"],
+         "run_at": "document_start"
+     }
+ ],
   "permissions": ["activeTab"]
 }
